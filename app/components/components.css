@@ -1,0 +1,26 @@
+.container {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .link {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .link:hover {
+    background-color: #555;
+  }
+  
+
+  .link + .link {
+    margin-left: 10px;
+  }
+  
