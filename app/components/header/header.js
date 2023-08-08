@@ -1,10 +1,9 @@
-'use server';
 
+import styles from './header.module.css'
 import Link from "next/link";
 import Image from 'next/image'
-import styles from './components.css'
 
-const Header = () => {
+export default function Header() {
     return (
       <header className={styles.container}>
         <nav className={styles.nav}>
@@ -19,4 +18,3 @@ const Header = () => {
     );
   };
   
-  export default Header;
