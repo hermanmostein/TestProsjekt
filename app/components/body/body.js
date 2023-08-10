@@ -12,3 +12,5 @@ export default function Body({title, text, imagePath, altText}) {
     </div>
  );
 };
+
+//max width 1100px, ser rart ut når det er mindre enn det
