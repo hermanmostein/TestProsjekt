@@ -1,24 +1,20 @@
+import React from 'react';
+import Link from 'next/link';
 import styles from './menu.module.css'
-import Link from "next/link";
-import Image from 'next/image';
 
-
-export default function Menu() {
-    return (
-    <div className={styles.default}>
-        <Image src={"/images.menu.svg"} width={32} height={32} />
-         <div className={styles.dropdown}>
-            <div className={styles.link}>
-                <Link href="/about">About</Link>
-            </div>
-            <div className={styles.link}>
-                <Link href="/resume">Resume</Link>
-            </div>
-            <div className={styles.link}>
-                <Link href="/fetch">Fetch</Link>
-            </div>
+export default function MegaMenu({ onClose }){
+    return(
+        <div className={styles.container}>
+            <nav className={styles.nav}>
+                <div className="container" onClick={onClose}>
+                    <img className={styles.icon} src='/icons/close.svg' alt="Close"></img>
+                </div>
+                <Link className={styles.link} href="/">Home</Link>
+                <Link className={styles.link} href="/about">About</Link>
+                <Link className={styles.link} href="/resume">Resume</Link>
+                <Link className={styles.link} href="/fetch">Fetch</Link>
+            </nav>
         </div>
-    </div>
     );
- };
-  
+}
+

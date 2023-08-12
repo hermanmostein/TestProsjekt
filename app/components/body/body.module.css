@@ -33,3 +33,27 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media(max-width: 768px) {
+    .container{
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .h1 {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 10px;
+    }
+
+    .h2 {
+        width: 100%;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+
+    .imageContainer {
+        justify-content: center;
+        display: block;
+    }
+}

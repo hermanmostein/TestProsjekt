@@ -1,0 +1,25 @@
+.container {
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+}
+
+.icon:hover {
+    background-image: "icons/menuhover.svg";
+}
+
+.visible {
+    background-color: transparent;
+}
+
+  

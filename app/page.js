@@ -1,15 +1,49 @@
+"use client"
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import styles from './page.module.css'
 import Header from './components/header/header'
 import Hero from './components/hero/hero'
 import Body from './components/body/body'
 import Footer from './components/footer/footer'
+import MenuButton from './components/menubutton/menubutton';
+import MegaMenu from './components/menu/menu';
 
 export default function Home() {
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth > 768) {
+        setShowMegaMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleToggleMegaMenu = () => {
+    setShowMegaMenu(!showMegaMenu);
+  };
   return (
     <main className={styles.main}>
       <div>
         <Header/>
+        {!showMegaMenu && windowWidth <= 768 &&(
+        <MenuButton onClick={handleToggleMegaMenu} isVisible={!showMegaMenu} color="coral"/>
+        )}
+        {showMegaMenu ? (
+          <MegaMenu onClose={handleToggleMegaMenu} />
+        ) : (
+          <div></div>
+        )}
         <Hero text="HENRIK SINGSTAD NORDBERG" color="coral"/>
         <Body 
         title="Min portefølje"
