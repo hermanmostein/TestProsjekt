@@ -3,6 +3,7 @@ import Header from '../components/header/header'
 import styles from '../page.module.css'
 import Image from 'next/image'
 import Body from '../components/body/body'
+import Footer from '../components/footer/footer'
 
 
 export default function Resume() {
@@ -17,6 +18,7 @@ export default function Resume() {
         imagePath="/images/skills.svg"
         altText="Denne seksjonen har et illustrasjonsbilde og tekst som trekker fram nøkkelkompetanse fra CV-en min."
         />
+        <Footer/>
       </div>
     </main>
   )

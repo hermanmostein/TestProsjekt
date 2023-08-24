@@ -25,6 +25,8 @@
     padding: 5px 10px;
     border-radius: 5px;
     justify-content: space-between;
+    display: block;
+    font-size: 50px;
   
   }
   
@@ -44,4 +46,7 @@
     height: 34px;
 }
 
+.menu {
+  flex: 1;
+}
   

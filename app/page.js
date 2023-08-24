@@ -8,6 +8,7 @@ import Body from './components/body/body'
 import Footer from './components/footer/footer'
 import MenuButton from './components/menubutton/menubutton';
 import MegaMenu from './components/menu/menu';
+import Link from 'next/link';
 
 export default function Home() {
   const [showMegaMenu, setShowMegaMenu] = useState(false);

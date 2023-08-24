@@ -1,6 +1,7 @@
-//import MyClock from '../clock/clock';
+import MyClock from '../clock/clock';
 import styles from './footer.module.css'
 import Link from 'next/link'
+import Clock from '../clock/clock';
 
 
 export default function Footer() {
@@ -8,6 +9,7 @@ export default function Footer() {
       <div className={styles.container}>
          <h1 className={styles.text}>Tips til forbedringer?</h1>
          <Link href="mailto:henrik@visito.no" className={styles.button}>Ta Kontakt</Link>
+         <Clock/>
       </div>
       );
     };

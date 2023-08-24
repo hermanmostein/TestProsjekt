@@ -7,6 +7,7 @@
     position: relative;
     overflow: hidden;
     animation: scroll 40s linear infinite;
+    gap: 30px;
 }
 
 @keyframes scroll {
@@ -16,5 +17,9 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+.text {
+    justify-content: space-between;
 }
 

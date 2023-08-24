@@ -4,6 +4,7 @@ import styles from '../page.module.css'
 import Image from 'next/image'
 import Body from '../components/body/body'
 import ListOfUsers from '../components/userList/user'
+import Footer from '../components/footer/footer'
 
 
 export default function Fetch() {
@@ -19,6 +20,7 @@ export default function Fetch() {
         altText="Denne seksjonen har et illustrasjonsbilde og en beskrivelse av en fiktiv navneliste."
         />
         <ListOfUsers/>
+        <Footer/>
       </div>
     </main>
   )

@@ -10,7 +10,7 @@ export default async function ListOfUsers() {
     return (
     <div className={styles.container}>
         {users.map((user) => {
-            return <p>{user.name}</p>;
+            return <p className={styles.text}>{user.name}</p>;
             })}
       </div>
   )

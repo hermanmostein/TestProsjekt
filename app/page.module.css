@@ -4,10 +4,21 @@
   justify-content: space-between;
   align-items: left;
   min-height: 100vh;
+  position: relative;
 
 }
 
 .h1 {
   font-size: large;
   color: coral;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: border-bottom 0.3s;
+}
+
+.link:hover {
+  border-bottom: 2px solid;
 }
